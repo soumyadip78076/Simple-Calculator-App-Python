@@ -7,3 +7,5 @@ def operation_handle(operation,a,b):
         print("Invalid Input Entered")
     if operation=="+":
         return add(a,b)
+    else:
+        return "Invalid operation. Please try again."
