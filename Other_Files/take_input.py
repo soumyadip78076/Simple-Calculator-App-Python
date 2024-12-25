@@ -6,13 +6,11 @@ def taking_input():
         print("Enter '/' for Division")
         print("Enter '*' for Multiplication")
         print("Enter 'Q' to Exit")
-
+        a = input("Enter Your First Number: ").strip()
         operation = input("What do you want to do? ").strip()
-
         if operation.lower() == "q":
             print("Exiting the calculator. Goodbye!")
             break
-        a = input("Enter Your First Number: ").strip()
         b = input("Enter Your Second Number: ").strip()
         result=operation_handle(operation,a,b)
         print(f"Output is : {result}")
